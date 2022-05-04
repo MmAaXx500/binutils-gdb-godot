@@ -111,7 +111,7 @@ fragment <<EOF
 #undef NT_EXE_IMAGE_BASE
 #define NT_EXE_IMAGE_BASE \
   ((bfd_vma) (${move_default_addr_high} ? 0x100400000LL \
-					: 0x140000000LL))
+					: 0x400000LL))
 #undef NT_DLL_IMAGE_BASE
 #define NT_DLL_IMAGE_BASE \
   ((bfd_vma) (${move_default_addr_high} ? 0x400000000LL \
